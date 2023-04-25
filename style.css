@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Kanit-Regular;
+  color: white;
+  transition: all 0.3s linear;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: black;
+}
+/*  header */
+
+header {
+  width: 100%;
+  position: fixed;
+  background-image: linear-gradient(to bottom, #9a97ec, #8783ea, #736fe8, #5e5be5, #4647e1);
+}
+.logo > img {
+  height: 90px;
+  border-radius: 50%;
+}
+
+.toggle > span {
+  display: none;
+}
+
+nav > a {
+  padding: 2px 10px;
+  margin: 0px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: Kanit-Light;
+  scroll-behavior: smooth;
+  transition: 0.6s all linear;
+}
+nav > a:hover {
+  padding: 2px 10px;
+  margin: 0px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: Kanit-Light;
+  color:red;
+}
+
+/*  main */
+
+main {
+  width: 100%;
+  height: 800px;
+  background-image: url("./img/gymbg3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid white;
+  background-attachment: fixed;
+}
+
+/*  main-btn */
+.main-btn {
+  margin-top: 40px;
+  width: 100%;
+}
+/*  About section */
+
+.about{
+    background-color: rgb(107, 101, 218);
+}
+
+.box > img {
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
+  border-radius: 5px;
+}
+.wraper {
+  width: 100%;
+  flex-wrap: wrap;
+}
+.box {
+  height: 500px;
+  flex-basis: 40%;
+  padding: 1.3em 4em;
+  background-color: var(--baby-blue);
+ 
+}
+.box-btn {
+  border: none;
+  padding: 7px 30px;
+  background-color: var(--main-blue);
+  border-radius: 7px;
+  color: white;
+  box-shadow: 2px 2px 3px 4px 0.323 black;
+  font-size: 1.2em;
+}
+.box-btn:hover {
+  border: 3px solid var(--main-blue);
+  padding: 7px 30px;
+  background-color: transparent;
+  border-radius: 7px;
+  color: white;
+  box-shadow: 2px 2px 3px 4px 0.323 black;
+  font-size: 1.2em;
+}
+
+
+/*  Trainer ABout  */
+
+.info{
+    width: 100%;
+    padding: 4px 10px;
+    flex-wrap: wrap;
+    background-image: radial-gradient(circle, #e1e1e1, #d6d8e6, #c3d1eb, #a8cbf0, #84c7f2);
+}
+
+
+.left > img{
+    width: 100%;
+   border-radius: 8px;
+
+}
+.left {
+    padding: 30px 14px;
+    width: 30%;
+   
+    
+    
+}
+
+.right{
+    width: 500px;
+    margin: 0px 0px 0px 30px ;
+    height: 200px;
+    margin: 10px 10px;
+    
+}
+
+.right > h2{
+    font-size: 5em;
+    color:var(--main-blue);
+    font-family: Kanit-Extra-Bold;
+}
+.my-about-text > span{
+  color: black;
+}

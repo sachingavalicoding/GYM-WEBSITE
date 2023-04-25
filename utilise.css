@@ -1,0 +1,188 @@
+/*  Kanit fonts  */
+@font-face{
+    font-family:Kanit-Thin;
+    src: url(./fonts/Kanit-Thin.ttf);
+}
+
+@font-face{
+    font-family: Kanit-Thin-Italic;
+    src: url(./fonts/Kanit-ThinItalic.ttf);
+}
+
+@font-face{
+    font-family: Kanit-Light;
+    src: url(./fonts/Kanit-Light.ttf);
+}
+@font-face{
+    font-family: Kanit-Light-Italic;
+    src: url(./fonts/Kanit-LightItalic.ttf);
+}
+@font-face{
+    font-family:Kanit-Regular;
+    src: url(./fonts/Kanit-Regular.ttf);
+}
+
+@font-face{
+    font-family: Kanit-Medium;
+    src: url(./fonts/Kanit-Medium.ttf);
+}
+
+@font-face{
+    font-family: Kanit-Medium-Italic;
+    src: url(./fonts/Kanit-MediumItalic.ttf);
+}
+@font-face{
+    font-family: Kanit-Bold;
+    src: url(./fonts/Kanit-Bold.ttf);
+}
+@font-face{
+    font-family: Kanit-Bold-Italic;
+    src: url(./fonts/Kanit-BoldItalic.ttf);
+}
+@font-face{
+    font-family: Kanit-Extra-Light;
+    src: url(./fonts/Kanit-ExtraLight.ttf);
+}
+@font-face{
+    font-family: Kanit-Extra-Light-Italic;
+    src: url(./fonts/Kanit-ExtraLightItalic.ttf);
+}
+@font-face{
+    font-family: Kanit-Extra-Bold;
+    src: url(./fonts/Kanit-ExtraBold.ttf);
+}
+@font-face{
+    font-family: Kanit-Extra-Bold-Italic;
+    src: url(./fonts/Kanit-ExtraBoldItalic.ttf);
+}
+@font-face{
+    font-family: Kanit-Black;
+    src: url(./fonts/Kanit-Black.ttf);
+}
+@font-face{
+    font-family: Kanit-Black-Italic;
+    src: url(./fonts/Kanit-BlackItalic.ttf);
+}
+@font-face{
+    font-family: Kanit-Semi-Bold;
+    src: url(./fonts/Kanit-SemiBold.ttf);
+}
+@font-face{
+    font-family: Kanit-Semi-Bold-Italic;
+    src: url(./fonts/Kanit-SemiBoldItalic.ttf);
+}
+
+/*  root varibale */
+
+:root{
+    --main-blue: #4831D4;
+    --main-lime-green: #CCF381;
+    --teal:#317773;
+    --leveder:#E2D1F9;
+    --baby-blue:#8AAAE5;
+    --white:#ffff;
+    --dark:#000;
+    --red:red;
+}
+
+.flex{
+    display:flex;
+}
+.align-items-center{
+    align-items: center;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.text-align-center{
+    text-align: center;
+}
+.justify-content-space-around{
+    justify-content: space-around;
+}
+
+
+.container{
+    width: 95vw;
+    margin: auto;
+}
+
+.btn{
+    padding: 7px 30px;
+    border: none;
+    background-color: var(--main-blue);
+    border-radius: 7px;
+    color: white;
+    box-shadow: 2px 2px 3px 4px 0.323 black;
+    font-size: 1.2em;
+}
+.btn:hover{
+    padding: 7px 30px;
+    border: 1px solid var(--main-blue);
+    background-color: transparent;
+    border-radius: 7px;
+    color: white;
+    box-shadow: 2px 2px 3px 4px 0.323 black;
+    font-size: 1.2em;
+}
+
+section{
+    margin-top: 20px;
+}
+
+/*  Media Query */
+@media (max-width:1000px){
+    nav > a{
+        padding: 1px 6px;
+        margin: 0px 5px;
+        font-size: 0.8rem;
+        
+    }
+}
+@media (max-width:785px){
+    nav > a{
+        display: none;
+
+    }
+    .toggle > span{
+        display: block;
+    }
+    .main-btn{
+        margin-top: 20px;
+    }
+}
+@media (max-width:985px){
+  .box{
+    flex-basis: auto;
+  }
+}
+@media (max-width:1170px){
+  .info{
+    flex-wrap: wrap;
+  }
+  .info > div{
+    flex-basis: 60%;
+   
+  }
+}
+@media (max-width:845px){
+  .info{
+    flex-wrap: wrap;
+  }
+  .info > div{
+    flex-basis: 70%;
+   
+  }
+}
+@media (max-width:600px){
+ .info > .right > h2 {
+    font-size: 3em;
+ }
+}
